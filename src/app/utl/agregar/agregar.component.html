@@ -6,6 +6,40 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Agregar works!</p>
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-8">
+            <form [formGroup]="alumno" (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                    <label for="matricula" class="form-label">Matrícula</label>
+                    <input type="text" formControlName="matricula" placeholder="Matricula" id="matricula" name="matricula" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" formControlName="nombre" placeholder="Nombre" id="nombre" name="nombre" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="apaterno" class="form-label">Apellido paterno</label>
+                    <input type="text" formControlName="apaterno" placeholder="APaterno" id="apaterno" name="apaterno" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="amaterno" class="form-label">Apellido materno</label>
+                    <input type="text" formControlName="amaterno" placeholder="AMaterno" id="amaterno" name="amaterno" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="text" formControlName="correo" placeholder="Correo" id="correo" name="correo" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Agregar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-12">
+
+        </div>
+    </div>
 </body>
 </html>
